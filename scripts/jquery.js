@@ -9,9 +9,14 @@ $(".image-overlay").on("hover", function() {
     $(this).css("cursor", "pointer");
 });
 
+//title fade
+$(document).ready(function() {
+    $("#titlecard").fadeIn("slow");
+});
+
 //animated nav buttons
 $(".chapter").on("hover", function() {
-    $(this).animate({padding: "200px"}, 300, swing);
+    $(this).animate({width: "100%"}, 200, swing);
     $(this).css("cursor", "pointer");
 });
 
